@@ -2,7 +2,7 @@
 
 Touchdown is a tiny bit of JavaScript that converts `<ul>` or `<ol>` navigation elements to `<select>` dropdowns—which is nice if you’re using an iPhone or something. 
 	
-Want to see a demo? Sure you do <http://samuelcotterall.com/code/touchdown/demo/>: 
+Want to see a demo? <http://samuelcotterall.com/code/touchdown/demo/>: 
 
 ## Here’s how you use it:
 	
