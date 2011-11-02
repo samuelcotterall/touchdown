@@ -30,7 +30,7 @@ Call the script and initialise it:
 	</script>
 
 	
-Use Media Queries or whatever to show/hide the lists and `<selects>` depending on screensize. Do this however you like, it’s up to you: 
+Use Media Queries or whatever to show/hide the lists and `<select>`s depending on screensize. Do this however you like, it’s up to you: 
 		
 	.touchdown-list {display: none;}
 	.touchdown {display: block;}
