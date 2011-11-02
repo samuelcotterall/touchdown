@@ -12,7 +12,7 @@
        More info: h5bp.com/b/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
+  <title>Droptouch Demo</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -37,6 +37,18 @@
   </header>
   <div role="main">
 
+	<ul id="social-networks">
+		<li><a href="https://plus.google.com/113158264847735001631/posts">Google+</a></li>
+		<li><a href="http://twitter.com/samuelcotterall/">Twitter</a></li>
+		<li><a href="http://samuelcotterall.tumblr.com/">Tumblr</a></li>
+		<li><a href="http://www.last.fm/user/samuelcotterall/">last.fm</a></li>
+	</ul>
+
+	<ul id="powered-by">
+		<li><a href="http://jquery.com">jQuery</a></li>
+		<li><a href="http://html5boilerplate.com//">HTML5 Boilerplate</a></li>
+	</ul>
+
   </div>
   <footer>
 
@@ -51,19 +63,20 @@
 
 
   <!-- scripts concatenated and minified via build script -->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
+  <script defer src="../jquery.touchdown.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		
+		$('#social-networks, #powered-by').DropTouch();
+		
+	})
+
+  </script>
+
+  
   <!-- end scripts -->
 
-
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
