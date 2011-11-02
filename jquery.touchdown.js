@@ -5,19 +5,22 @@
 
 	$.fn.Touchdown = function() {
 
-		return this.each(function(i,obj) {
+		return this.each(function() {
 
 			$this = $(this);
 
-			var options;
-			
-			for (var i = $this.find('li').length - 1; i >= 0; i--){
-				var item = $this.find('li')[i],
-					anchor = $(item).find('a'); 
-				options += '<option value="' + anchor.attr('href') + '">' + anchor.text() + '</option>';
-			};			
-			
-			$this.addClass('touchdown-list').after('<select class="touchdown"> ' + options +'</select>');
+			var li = $this.find('li'),
+				optionList;
+				
+			for (var i = li.length - 1; i >= 0; i--){
+
+				var anchor = $(li[i]).find('a'); 
+				optionList += '<option value="' + anchor.attr('href') + '">' + anchor.text() + '</option>';
+
+			}
+
+			// DOM manipulation
+			$this.addClass('touchdown-list').after('<select class="touchdown"> ' + optionList +'</select>');
 
 			// Event handler
 			$this.next('select').change(function(){
