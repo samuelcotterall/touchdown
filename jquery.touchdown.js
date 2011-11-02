@@ -3,7 +3,7 @@
 */
 (function($) {
 
-	$.fn.DropTouch = function() {
+	$.fn.Touchdown = function() {
 
 		return this.each(function(i,obj) {
 
@@ -17,7 +17,7 @@
 				options += '<option value="' + anchor.attr('href') + '">' + anchor.text() + '</option>';
 			};			
 			
-			$this.after('<select class="droptouch"> ' + options +'</select>');
+			$this.addClass('touchdown-list').after('<select class="touchdown"> ' + options +'</select>');
 
 			// Event handler
 			$this.next('select').change(function(){

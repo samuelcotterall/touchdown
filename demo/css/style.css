@@ -206,11 +206,9 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
-
-
-
-
-
+body {padding: 12px;}
+.touchdown-list {display: none;}
+.touchdown {display: block;}
 
 
 
@@ -230,11 +228,13 @@ td { vertical-align: top; }
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
 
+
 }
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
-
+.touchdown-list {display: block;}
+.touchdown {display: none;}
 }
 
 
