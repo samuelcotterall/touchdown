@@ -1,5 +1,5 @@
 /**
-* jQuery Droptouch Plugin <https://github.com/samuelcotterall/Touchdown>
+* jQuery Touchdown Plugin <https://github.com/samuelcotterall/Touchdown>
 * 
 * By Samuel Cotterall <http://samuelcotterall.com>
 */
