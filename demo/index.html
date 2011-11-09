@@ -48,27 +48,33 @@
 	
 	<p><img src="img/qr.gif" alt="qrcode"  /></p>
 
-	<h1>Title</h1>
 
-	<ul id="social-networks">
-		<li><a href="https://plus.google.com/113158264847735001631/posts">Google+</a></li>
+	<ul id="github" title="Github&hellip;">
 		<li>
-			<a href="http://twitter.com/samuelcotterall/">Twitter</a>
+			<a href="https://github.com/samuelcotterall/">samuelcotterall's Profile - GitHub</a>
 			<ul>
-				<li><a href="http://lorem.com">Lorem</a></li>
 				<li>
-					<a href="http://ipsum.com">Ipsum</a>
-						<ul>
-							<li><a href="#">fghgkhljl</a></li>
-						</ul>
-				</li>					
+					<a href="https://github.com/samuelcotterall/Touchdown">Touchdown Github Repository</a>
+					<ul>
+						<li><a href="https://github.com/samuelcotterall/Touchdown/network">Network</a></li>												
+						<li><a href="https://github.com/samuelcotterall/Touchdown/pulls">Pull Requests</a></li>																
+						<li><a href="https://github.com/samuelcotterall/Touchdown/issues">Issues</a></li>
+						<li><a href="https://github.com/samuelcotterall/Touchdown/wiki">Wiki</a></li>				
+						<li><a href="https://github.com/samuelcotterall/Touchdown/graphs/languages">Stats &amp; Graphs</a></li>						
+					</ul>
+				</li>
 			</ul>
 		</li>
+	</ul>
+	
+	<ul id="social-networks" title="Social Networks&hellip;">
+		<li><a href="https://plus.google.com/113158264847735001631/posts">Google+</a></li>
+		<li><a href="http://twitter.com/samuelcotterall/">Twitter</a></li>
 		<li><a href="http://samuelcotterall.tumblr.com/">Tumblr</a></li>
 		<li><a href="http://www.last.fm/user/samuelcotterall/">last.fm</a></li>
 	</ul>
 
-	<ul id="powered-by">
+	<ul id="powered-by" title="Powered By&hellip;">
 		<li><a href="http://jquery.com">jQuery</a></li>
 		<li><a href="http://html5boilerplate.com//">HTML5 Boilerplate</a></li>
 	</ul>
@@ -94,7 +100,7 @@
 
 	$(document).ready(function(){
 		
-		$('#social-networks, #powered-by').Touchdown();
+		$('#github, #social-networks, #powered-by').Touchdown();
 		
 	})
 
