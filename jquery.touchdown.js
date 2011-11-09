@@ -10,15 +10,24 @@
 		return this.each(function() {
 
 			$this = $(this);
-
-			var li = $this.find('li'),
+			
+			var listDepth = $this.parents().length,
+				anchor = $this.find('a'),
 				optionList;
 				
-			for (var i = li.length - 1; i >= 0; i--){
-
-				var anchor = $(li[i]).find('a'); 
-				optionList += '<option value="' + anchor.attr('href') + '">' + anchor.text() + '</option>';
-
+			for (var i=0; i < anchor.length; i++) {
+				
+				var a = $(anchor[i]), 										// Current <a>
+					linkDepth = ((a.parents().length - listDepth) / 2) - 1, // Current <a>'s depth minus main list's depth divided by 2 (account for both <ul> and <li> parents) minus 1
+					indent = '';											// Reset indent
+					
+				while (linkDepth > 0){		// Append a space for each level
+					indent += '\u00a0 ';
+					linkDepth--;
+				}
+					
+				optionList += '<option value="' + a.attr('href') + '">' + indent + a.text() + '</option>';				
+			
 			}
 
 			// DOM manipulation
