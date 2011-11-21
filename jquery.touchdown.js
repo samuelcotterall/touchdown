@@ -13,7 +13,7 @@
 			
 			var listDepth = $this.parents().length,
 				anchor = $this.find('a'),
-				title = 'Select',
+				title = 'Navigate',
 				optionList;
 			
 			// Create a default `<option>` for the list - If this is missing, fall back to 'Select'
